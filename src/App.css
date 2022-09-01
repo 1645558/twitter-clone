@@ -14,31 +14,6 @@ body {
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10px;
 }
 
-.sidebaroption {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 30px;
-}
-
-.sidebaroption:hover {
-  background-color: #e8f5fe;
-  color: var(--twitter-color);
-  transition: color 100ms ease-out;
-}
-
-.sidebaroption > .MuiSvgIcon-root {
-  padding: 20px;
-}
-
-.sidebaroption > h2 {
-  font-weight: 700;
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-.sidebaroption--active {
-  color: var(--twitter-color);
-}

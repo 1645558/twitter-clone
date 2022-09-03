@@ -7,11 +7,12 @@ function TweetBox() {
     return (
         <div className='tweetBox'>
             <form>
-                <div className='tweetbox__input'>
+                <div className='tweetBox__input'>
                 <FaceIcon />
                 <input placeholder='Tweet Something' type='text'></input>
                 </div>
-                <Button>Tweet</Button>
+                <input className='tweetBox__imageInput' placeholder='Enter image URL' type='text'></input>
+                <Button className='tweetBox__tweetButton'>Tweet</Button>
             </form>
         </div>
     )

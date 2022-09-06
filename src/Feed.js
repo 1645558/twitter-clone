@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Feed.css';
 import TweetBox from './TweetBox';
 import Post from './Post';
+import FaceIcon from '@mui/icons-material/Face';
 
 function Feed() {
+    const [posts, setPosts] = useState([]);
     return (
         <div className='feed'>
             <div className='feed__header'>
@@ -12,10 +14,13 @@ function Feed() {
 
             <TweetBox />
 
-            <Post />
-            <Post />
-            <Post />
-            <Post />
+            <Post 
+            displayName='Connor Thompson' 
+            username='Vice' 
+            verified={true}
+            text='Yoooo its working'
+            avatar={FaceIcon}
+            image='https://giphy.com/embed/6qdKZFhT0VBm0' />
 
         </div>
     )

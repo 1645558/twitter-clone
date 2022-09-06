@@ -24,19 +24,19 @@ function Post({
                 <div className='post__header'>
                     <div className='post__headerText'>
                         <h3>
-                            Connor Thompson {' '}
+                            {displayName}{' '}
                             <span className='post__headerSpecial'>
-                                <VerifiedIcon className='post__badge' />
+                                {verified && <VerifiedIcon className='post__badge' />} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className='post__headerDescription'>
                         <p>
-                            lorem epsum
+                            {text}
                         </p>
                     </div>
                 </div>
-                <iframe src="https://giphy.com/embed/6qdKZFhT0VBm0" title='spider' width="480" height="360" frameBorder="0" class="giphy-embed"></iframe><p><a href="https://giphy.com/gifs/6qdKZFhT0VBm0"> </a></p>
+                <iframe src={image} title='spider' width="480" height="360" frameBorder="0" class="giphy-embed"></iframe><p><a href="https://giphy.com/gifs/6qdKZFhT0VBm0"> </a></p>
                 <div className='post__footer'>
                     <ChatBubbleIcon fontSize='small' />
                     <RepeatIcon fontSize='small' />
